@@ -1,0 +1,13 @@
+<launch>
+  <node name="condition1" pkg="behavior_tree_leaves" type="BallFound" />
+  <node name="action1" pkg="behavior_tree_leaves" type="FindBall" />
+  <node name="condition2" pkg="behavior_tree_leaves" type="BallClose" />
+  <node name="action2" pkg="behavior_tree_leaves" type="ApproachBall" />
+  <node name="condition3" pkg="behavior_tree_leaves" type="BallGrasped" />
+  <node name="action3" pkg="behavior_tree_leaves" type="GraspBall" />
+  <node name="condition4" pkg="behavior_tree_leaves" type="BinClose" />
+  <node name="action4" pkg="behavior_tree_leaves" type="ApproachBin" />
+  <node name="condition5" pkg="behavior_tree_leaves" type="BallPlaced" />
+  <node name="action5" pkg="behavior_tree_leaves" type="PlaceBall" />
+  <node name="test" pkg="behavior_tree_core" type="gtest_ros" />
+</launch>

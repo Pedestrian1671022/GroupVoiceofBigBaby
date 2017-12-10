@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+  <rosparam file="$(find Group_Voice_of_BigBaby)/param/param.yaml" command="load"/>
+  <node name="WakeUp" pkg="Group_Voice_of_BigBaby" type="WakeUp.py"/>
+  <node name="VoiceCapture" pkg="Group_Voice_of_BigBaby" type="VoiceCapture.py"/>
+  <node name="VoiceToText" pkg="Group_Voice_of_BigBaby" type="VoiceToText.py" output="screen"/>
+  <node name="Answer" pkg="Group_Voice_of_BigBaby" type="Answer.py"/>
+  <node name="OrderSearch" pkg="Group_Voice_of_BigBaby" type="OrderSearch.py" output="screen"/>
+  <node name="TextToText" pkg="Group_Voice_of_BigBaby" type="TextToText.py" output="screen"/>
+  <node name="TextToVoice" pkg="Group_Voice_of_BigBaby" type="TextToVoice"/>
+  <node name="VoicePlay" pkg="Group_Voice_of_BigBaby" type="VoicePlay.py"/>
+  <node name="BehaviorTree1" pkg="Group_Voice_of_BigBaby" type="BehaviorTree1"/>
+  <node name="BehaviorTree2" pkg="Group_Voice_of_BigBaby" type="BehaviorTree2"/>
+</launch>

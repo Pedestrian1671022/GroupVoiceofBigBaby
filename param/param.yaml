@@ -1,0 +1,4 @@
+/comm/param/ctrl/wakeup: true
+/param/play: false
+/param/interrupt: false
+/param/answer: false
