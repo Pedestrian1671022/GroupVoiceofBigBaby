@@ -1,4 +1,4 @@
-## Group_Voice_of_BigBaby
+## GroupVoiceofBigBaby
 
 #### Precondition:
 
